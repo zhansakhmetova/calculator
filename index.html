@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	<script>
+		function insert(value) {
+			document.form.result.value = document.form.result.value + value
+		}
+
+		function equal(){
+			document.form.result.value = eval(document.form.result.value)
+		}
+
+	</script>
+	<form name="form">
+		<input type="text" name="result" id="result">
+		<table>
+			<tr>
+				<td><input type="button" name="" value="1" onclick="insert(value)"></td>
+				<td><input type="button" name="" value="2" onclick="insert(value)"></td>
+				<td><input type="button" name="" value="3" onclick="insert(value)"></td>
+				<td><input type="button" name="" value="+" onclick="insert(value)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="" value="4" onclick="insert(value)"></td>
+				<td><input type="button" name="" value="5" onclick="insert(value)"></td>
+				<td><input type="button" name="" value="6" onclick="insert(value)"></td>
+				<td><input type="button" name="" value="-" onclick="insert(value)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="" value="7" onclick="insert(value)"></td>
+				<td><input type="button" name="" value="8" onclick="insert(value)"> </td>
+				<td><input type="button" name="" value="9" onclick="insert(value)"></td>
+				<td><input type="button" name="" value="*" onclick="insert(value)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="" value="=" onclick="equal()"></td>
+				<td><input type="button" name="" value="0" onclick="insert(value)"></td>
+				<td><input type="button" name="" value="." onclick="insert(value)"></td>
+				<td><input type="button" name="" value="/" onclick="insert(value)"></td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>
